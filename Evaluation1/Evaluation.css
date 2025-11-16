@@ -7,12 +7,16 @@
     border: 0.1px solid whitesmoke;
     display: flex;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 15px;
+    padding: 2px;
 }
+
 .navbar h1{
-    color: rgb(40, 88, 233);
+    color: rgb(19, 78, 253);
     font-size: 20px;
-    font-weight: bold;
+    font-weight: bolder;
     padding: 10px 10px;
+    width: 170px;
 }
 .inner{
     display: flex;
@@ -29,8 +33,10 @@
     color: white;
     border: none;
     cursor: pointer;
-    margin: 10px;
+    margin: 15px;
     padding: 10px;
+    width: 120px;
+
 }
 .order-explore h3{
     margin-left: 150px;
@@ -150,4 +156,38 @@ p{
     height: 60px;
     width: 180px;
     cursor: pointer;
+}
+@media (max-width:500px) {
+    .navbar{
+        display: none;
+    }
+    .order{
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+        margin-left: 0px;
+    }
+    .midsection{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .container{
+        flex-direction: column;
+        height: auto;
+    }
+}
+@media (max-width:800px) {
+    .navbar{
+        display: none;
+    }
+    .order{
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+        margin-left: 0px;
+    }
+    .midsection{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .container{
+        flex-direction: column;
+        height: auto;
+    }
 }
