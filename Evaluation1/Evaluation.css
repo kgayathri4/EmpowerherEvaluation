@@ -175,9 +175,6 @@ p{
     }
 }
 @media (max-width:800px) {
-    .navbar{
-        display: none;
-    }
     .order{
         grid-template-columns: repeat(2,1fr);
         width: 100%;
